@@ -70,7 +70,7 @@ async def _(e):
         try:
             r = await e.client(
                 CreateChatRequest(
-                    users=["@missrose_bot"],
+                    users=["@SafetyNextBot"],
                     title=group_name,
                 ),
             )
@@ -78,7 +78,7 @@ async def _(e):
             await e.client(
                 DeleteChatUserRequest(
                     chat_id=created_chat_id,
-                    user_id="@missrose_bot",
+                    user_id="@SafetyNextBot",
                 ),
             )
             result = await e.client(
@@ -97,7 +97,7 @@ async def _(e):
             r = await e.client(
                 CreateChannelRequest(
                     title=group_name,
-                    about="Join @TeamUltroid",
+                    about="Join @ARNextRobot",
                     megagroup=False if type_of_group == "c" else True,
                 ),
             )
