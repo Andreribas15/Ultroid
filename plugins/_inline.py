@@ -52,17 +52,17 @@ async def e(o):
         )
         res = [
             await b.article(
-                title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
+                title="ARNext UserBot",
+                url="https://t.me/ARNextRobot",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 buttons=[
-                    [Button.url(text="Support Group", url="t.me/UltroidSupport")],
+                    [Button.url(text="Ultroid Support Group", url="t.me/UltroidSupport")],
                     [
                         Button.url(
-                            text="Repo",
-                            url="https://github.com/Teamultroid/Ultroid",
+                            text="ARNext Repo",
+                            url="https://github.com/Andreribas15/Ultroid/",
                         ),
                     ],
                 ],
@@ -389,7 +389,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = f"{plugin_name} has no detailed help..."
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TeamUltroid"
+        reply_pop_up_alert += "\n© @TeamUltroid/@ARNextRobot"
         try:
             if event.query.user_id in sed:
                 await event.edit(
@@ -440,7 +440,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = f"{plugin_name} has no detailed help..."
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TeamUltroid"
+        reply_pop_up_alert += "\n© @TeamUltroid/@ARNextRobot"
         try:
             if event.query.user_id in sed:
                 await event.edit(
