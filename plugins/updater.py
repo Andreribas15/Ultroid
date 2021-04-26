@@ -21,7 +21,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from . import HELP, get_string, ultroid_version
 
-UPSTREAM_REPO_URL = "https://github.com/TeamUltroid/Ultroid"
+UPSTREAM_REPO_URL = "https://github.com/Andreribas15/Ultroid/"
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))),
     "requirements.txt",
