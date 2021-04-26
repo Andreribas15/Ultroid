@@ -20,10 +20,12 @@ from . import *
 @asst_cmd("start")
 async def assistant(event):
     if event.is_group and event.sender_id in sed:
-        bnn = (await asst.get_me()).username
-        return await event.reply(
-            "`I dont work in groups`",
-            buttons=[Button.url("⚙️Sᴛᴀʀᴛ⚙️", url=f"https://t.me/{bnn}?start=set")],
+        return
+        if not udB.get("STARTMSG"):
+            if udB.get("PMBOT") == "True":
+                ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
+            await event.reply(
+                f"Hey there, this is Ultroid Assistant of {OWNER_NAME}!\n\n{ok}",
         )
     else:
         if not is_added(event.sender_id) and event.sender_id not in sed:
